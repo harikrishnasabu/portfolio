@@ -124,7 +124,8 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<form method="post" action="javascript:sendMail();">
+							<form action="https://formspree.io/mdowabyn"
+							method="POST">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -132,7 +133,7 @@
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" name="_replyto" id="email" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -145,8 +146,7 @@
 							</form>
 							<ul class="contact">
 								<li class="icon solid fa-home">
-								<strong> 
-									7990 A , Avenue Papieau</strong> <br />
+								
 								<strong> Montreal, QC H2E 2H6</strong> 
 								</li>
 								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/harikrishna-sabu-272527141/"><strong> Linkedin </strong> </a></li>
@@ -166,17 +166,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				function sendMail () {
-				  debugger
-				  Email.send({
-					Host: 'smtp.gmail.com',
-					To: 'harikrishnasabu@gmail.com',
-					From: document.getElementById('email'),
-					Subject: document.getElementById('name'),
-					Body: document.getElementById('message')
-				  }).then(message => alert('mail sent successfully'))
-				}
-			  </script>
+			
 	</body>
 </html>
